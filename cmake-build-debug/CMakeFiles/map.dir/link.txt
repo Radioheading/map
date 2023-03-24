@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/map.dir/data/two/code.cpp.o  -o map 
