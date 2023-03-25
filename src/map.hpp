@@ -30,6 +30,19 @@
 
 namespace sjtu {
 
+template<typename T>
+struct my_type_traits{
+  using iterator_assignable = typename T::iterator_assignable;
+};
+//2.定义两个类，表示迭代器是否可被赋值的特性(这一步也可以使用枚举变量来实现)
+struct my_true_type{
+  //todo
+};
+struct my_false_type{
+  //todo
+};
+//3.分别在可被赋值的迭代器和不可被赋值的迭代器中定义 iterator_assignable 类型
+
 template<
     class Key,
     class T,
@@ -382,6 +395,7 @@ class map {
   class const_iterator;
   class iterator {
     friend class map;
+    using iterator_assignable = my_true_type;
    private:
     TreeNode *node;
     const map<Key, T, Compare> *from;
@@ -480,6 +494,7 @@ class map {
   };
   class const_iterator {
     friend class map;
+    using iterator_assignable = my_false_type;
    private:
     TreeNode *node;
     const map<Key, T, Compare> *from;

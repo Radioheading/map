@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(map)
+project(mySTL_map)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -7,8 +7,8 @@ include_directories(.)
 include_directories(data)
 include_directories(src)
 
-add_executable(map
-        data/two/code.cpp
+add_executable(mySTL_map
+        src/type_trait_test.cpp
         data/class-bint.hpp
         data/class-integer.hpp
         data/class-matrix.hpp

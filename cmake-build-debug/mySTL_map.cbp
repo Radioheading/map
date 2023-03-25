@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="map"/>
+		<Option title="mySTL_map"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="map">
-				<Option output="/home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/map" prefix_auto="0" extension_auto="0"/>
+			<Target title="mySTL_map">
+				<Option output="/home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/mySTL_map" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -56,14 +56,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/Makefile&quot;  VERBOSE=1 map"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/Makefile&quot;  VERBOSE=1 mySTL_map"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="map/fast">
-				<Option output="/home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/map" prefix_auto="0" extension_auto="0"/>
+			<Target title="mySTL_map/fast">
+				<Option output="/home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/mySTL_map" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -81,7 +81,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/Makefile&quot;  VERBOSE=1 map/fast"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/Makefile&quot;  VERBOSE=1 mySTL_map/fast"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -89,25 +89,25 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/brucelee/CS1951_DataStructures/mySTL_map/data/class-bint.hpp">
-			<Option target="map"/>
+			<Option target="mySTL_map"/>
 		</Unit>
 		<Unit filename="/home/brucelee/CS1951_DataStructures/mySTL_map/data/class-integer.hpp">
-			<Option target="map"/>
+			<Option target="mySTL_map"/>
 		</Unit>
 		<Unit filename="/home/brucelee/CS1951_DataStructures/mySTL_map/data/class-matrix.hpp">
-			<Option target="map"/>
-		</Unit>
-		<Unit filename="/home/brucelee/CS1951_DataStructures/mySTL_map/data/two/code.cpp">
-			<Option target="map"/>
+			<Option target="mySTL_map"/>
 		</Unit>
 		<Unit filename="/home/brucelee/CS1951_DataStructures/mySTL_map/src/exceptions.hpp">
-			<Option target="map"/>
+			<Option target="mySTL_map"/>
 		</Unit>
 		<Unit filename="/home/brucelee/CS1951_DataStructures/mySTL_map/src/map.hpp">
-			<Option target="map"/>
+			<Option target="mySTL_map"/>
+		</Unit>
+		<Unit filename="/home/brucelee/CS1951_DataStructures/mySTL_map/src/type_trait_test.cpp">
+			<Option target="mySTL_map"/>
 		</Unit>
 		<Unit filename="/home/brucelee/CS1951_DataStructures/mySTL_map/src/utility.hpp">
-			<Option target="map"/>
+			<Option target="mySTL_map"/>
 		</Unit>
 		<Unit filename="/home/brucelee/CS1951_DataStructures/mySTL_map/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

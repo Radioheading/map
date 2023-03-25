@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/brucelee/map
+CMAKE_SOURCE_DIR = /home/brucelee/CS1951_DataStructures/mySTL_map
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/brucelee/map/cmake-build-debug
+CMAKE_BINARY_DIR = /home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/brucelee/map/cmake-build-debug/CMakeFiles /home/brucelee/map/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/CMakeFiles /home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/brucelee/map/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brucelee/CS1951_DataStructures/mySTL_map/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named map
+# Target rules for targets named mySTL_map
 
 # Build rule for target.
-map: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 map
-.PHONY : map
+mySTL_map: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mySTL_map
+.PHONY : mySTL_map
 
 # fast build rule for target.
-map/fast:
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/build
-.PHONY : map/fast
+mySTL_map/fast:
+	$(MAKE) -f CMakeFiles/mySTL_map.dir/build.make CMakeFiles/mySTL_map.dir/build
+.PHONY : mySTL_map/fast
 
-data/two/code.o: data/two/code.cpp.o
+src/type_trait_test.o: src/type_trait_test.cpp.o
 
-.PHONY : data/two/code.o
+.PHONY : src/type_trait_test.o
 
 # target to build an object file
-data/two/code.cpp.o:
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/data/two/code.cpp.o
-.PHONY : data/two/code.cpp.o
+src/type_trait_test.cpp.o:
+	$(MAKE) -f CMakeFiles/mySTL_map.dir/build.make CMakeFiles/mySTL_map.dir/src/type_trait_test.cpp.o
+.PHONY : src/type_trait_test.cpp.o
 
-data/two/code.i: data/two/code.cpp.i
+src/type_trait_test.i: src/type_trait_test.cpp.i
 
-.PHONY : data/two/code.i
+.PHONY : src/type_trait_test.i
 
 # target to preprocess a source file
-data/two/code.cpp.i:
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/data/two/code.cpp.i
-.PHONY : data/two/code.cpp.i
+src/type_trait_test.cpp.i:
+	$(MAKE) -f CMakeFiles/mySTL_map.dir/build.make CMakeFiles/mySTL_map.dir/src/type_trait_test.cpp.i
+.PHONY : src/type_trait_test.cpp.i
 
-data/two/code.s: data/two/code.cpp.s
+src/type_trait_test.s: src/type_trait_test.cpp.s
 
-.PHONY : data/two/code.s
+.PHONY : src/type_trait_test.s
 
 # target to generate assembly for a file
-data/two/code.cpp.s:
-	$(MAKE) -f CMakeFiles/map.dir/build.make CMakeFiles/map.dir/data/two/code.cpp.s
-.PHONY : data/two/code.cpp.s
+src/type_trait_test.cpp.s:
+	$(MAKE) -f CMakeFiles/mySTL_map.dir/build.make CMakeFiles/mySTL_map.dir/src/type_trait_test.cpp.s
+.PHONY : src/type_trait_test.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... map"
-	@echo "... data/two/code.o"
-	@echo "... data/two/code.i"
-	@echo "... data/two/code.s"
+	@echo "... mySTL_map"
+	@echo "... src/type_trait_test.o"
+	@echo "... src/type_trait_test.i"
+	@echo "... src/type_trait_test.s"
 .PHONY : help
 
 

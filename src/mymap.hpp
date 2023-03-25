@@ -30,6 +30,19 @@
 
 namespace sjtu {
 
+template<typename type>
+struct my_type_trait {
+  using iterator_assignable = typename type::iterator_assignable;
+};
+
+struct my_true_type {
+  bool assignable = true;
+};
+
+struct my_false_type {
+  bool assignable = false;
+};
+
 template<
     class Key,
     class T,
@@ -396,6 +409,7 @@ class map {
     // https://en.cppreference.com/w/cpp/header/type_traits
     // About value_type: https://blog.csdn.net/u014299153/article/details/72419713
     // About iterator_category: https://en.cppreference.com/w/cpp/iterator
+    using iterator_assignable = my_true_type;
     using difference_type = std::ptrdiff_t;
     using value_type = map::value_type;
     using pointer = value_type *;
@@ -484,6 +498,7 @@ class map {
     TreeNode *node;
     const map<Key, T, Compare> *from;
    public:
+    using iterator_assignable = my_false_type;
     const_iterator(TreeNode *_node = nullptr, const map *_from = nullptr) : node(_node), from(_from) {}
     const_iterator(const const_iterator &other) : node(other.node), from(other.from) {}
     const_iterator(const iterator &other) : node(other.node), from(other.from) {}

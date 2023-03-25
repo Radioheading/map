@@ -14,7 +14,7 @@ cstring
 string
 -
 
-../src/map.hpp
+../src/mymap.hpp
 functional
 -
 cstddef
@@ -30,23 +30,9 @@ iostream
 utility
 -
 
-/home/brucelee/map/data/two/code.cpp
-fstream
--
-cassert
+/home/brucelee/CS1951_DataStructures/mySTL_map/src/type_trait_test.cpp
+mymap.hpp
 -
 iostream
 -
-vector
--
-algorithm
--
-map
--
-ctime
--
-exceptions.hpp
-/home/brucelee/map/data/two/exceptions.hpp
-map.hpp
-/home/brucelee/map/data/two/map.hpp
 

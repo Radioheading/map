@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/brucelee/map/. -I/home/brucelee/map/data -I/home/brucelee/map/src 
+CXX_INCLUDES = -I/home/brucelee/CS1951_DataStructures/mySTL_map/. -I/home/brucelee/CS1951_DataStructures/mySTL_map/data -I/home/brucelee/CS1951_DataStructures/mySTL_map/src 
 

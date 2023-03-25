@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/mySTL_map.dir/src/type_trait_test.cpp.o  -o mySTL_map 
