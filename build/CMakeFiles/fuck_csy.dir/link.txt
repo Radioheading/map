@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/fuck_csy.dir/src/type_trait_test.cpp.o  -o fuck_csy 

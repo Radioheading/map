@@ -29,18 +29,18 @@
 //todo: check operator[](reference) (fixed, due to the absence of return in NodeInsert)
 
 namespace sjtu {
-
+enum assign_check {
+  yes, no
+};
 template<typename T>
 struct my_type_traits{
   using iterator_assignable = typename T::iterator_assignable;
+  static constexpr assign_check check = T::check;
 };
 //2.定义两个类，表示迭代器是否可被赋值的特性(这一步也可以使用枚举变量来实现)
-struct my_true_type{
-  //todo
-};
-struct my_false_type{
-  //todo
-};
+struct my_true_type{};
+struct my_false_type{};
+
 //3.分别在可被赋值的迭代器和不可被赋值的迭代器中定义 iterator_assignable 类型
 
 template<
@@ -394,8 +394,6 @@ class map {
    */
   class const_iterator;
   class iterator {
-    friend class map;
-    using iterator_assignable = my_true_type;
    private:
     TreeNode *node;
     const map<Key, T, Compare> *from;
@@ -415,6 +413,9 @@ class map {
     using pointer = value_type *;
     using reference = value_type &;
     using iterator_category = std::output_iterator_tag;
+    friend class map;
+    using iterator_assignable = my_true_type;
+    static constexpr assign_check check = yes;
     // If you are interested in type_traits, toy_traits_test provides a place to
     // practice. But the method used in that test is old and rarely used, so you
     // may explore on your own.
@@ -493,12 +494,13 @@ class map {
     }
   };
   class const_iterator {
-    friend class map;
-    using iterator_assignable = my_false_type;
    private:
     TreeNode *node;
     const map<Key, T, Compare> *from;
    public:
+    friend class map;
+    using iterator_assignable = my_false_type;
+    static constexpr assign_check check = no;
     const_iterator(TreeNode *_node = nullptr, const map *_from = nullptr) : node(_node), from(_from) {}
     const_iterator(const const_iterator &other) : node(other.node), from(other.from) {}
     const_iterator(const iterator &other) : node(other.node), from(other.from) {}
