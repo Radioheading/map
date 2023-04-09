@@ -40,7 +40,14 @@ struct my_type_traits{
 //2.定义两个类，表示迭代器是否可被赋值的特性(这一步也可以使用枚举变量来实现)
 struct my_true_type{};
 struct my_false_type{};
-
+template<typename U, typename T>
+struct cmp {
+  static constexpr bool value = false;
+};
+template<typename T>
+struct cmp<T, T> {
+  static constexpr bool value = true;
+};
 //3.分别在可被赋值的迭代器和不可被赋值的迭代器中定义 iterator_assignable 类型
 
 template<

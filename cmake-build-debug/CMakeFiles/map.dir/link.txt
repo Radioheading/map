@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/map.dir/src/type_trait_2.cpp.o  -o map 

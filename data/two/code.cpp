@@ -6,7 +6,7 @@
 #include <map>
 #include <ctime>
 #include "exceptions.hpp"
-#include "map.hpp"
+#include "hismap.hpp"
 
 const int MAXN = 50001;
 

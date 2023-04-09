@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/brucelee/CS1951_DataStructures/mySTL_map/src/exceptions.hpp
+cstddef
+-
+cstring
+-
+string
+-
+
+/home/brucelee/CS1951_DataStructures/mySTL_map/src/map.hpp
+functional
+-
+cstddef
+-
+utility.hpp
+/home/brucelee/CS1951_DataStructures/mySTL_map/src/utility.hpp
+exceptions.hpp
+/home/brucelee/CS1951_DataStructures/mySTL_map/src/exceptions.hpp
+iostream
+-
+
+/home/brucelee/CS1951_DataStructures/mySTL_map/src/type_trait_2.cpp
+iostream
+-
+map.hpp
+/home/brucelee/CS1951_DataStructures/mySTL_map/src/map.hpp
+iostream
+-
+
+/home/brucelee/CS1951_DataStructures/mySTL_map/src/utility.hpp
+utility
+-
+

@@ -7,7 +7,7 @@ include_directories(.)
 include_directories(data)
 include_directories(src)
 add_executable(map
-        src/type_trait_test.cpp
+        src/type_trait_2.cpp
         data/class-bint.hpp
         data/class-integer.hpp
         data/class-matrix.hpp
